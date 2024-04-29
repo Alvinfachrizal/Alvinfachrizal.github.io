@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDRACOSTORE &bull; UI Rasa Sayang</title>
+    <!-- head links -->
+    <script type="text/javascript" src="component/head_links.js"></script>
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <script type="text/javascript" src="component/navbar.js"></script>
+
+    <!-- main menu -->
+    <script type="text/javascript" src="component/menu.js"></script>
+
+    <!-- banner produk -->
+    <header>
+        <!-- banner mobile -->
+        <div class="container-fluid px-0 d-lg-none">
+            <img src="assets/img/banner/rs_mobile.jpg" width="100%" height="auto" alt="">
+        </div>
+        <!-- banner desktop -->
+        <div class="container d-none d-lg-block">
+            <img src="assets/img/banner/rs_desktop.jpg" width="100%" height="auto" alt="">
+        </div>
+    </header>
+
+    <!-- breadcrumb -->
+    <script src="component/breadcrumb.js"></script>
+
+    <!-- trigger sidebar filter -->
+    <script type="text/javascript" src="component/trigger_sidebar_filter.js"></script>
+
+    <main class="wrapper pt-4 pt-lg-5">
+
+        <section>
+            <div class="container">
+                <div class="row gx-lg-5">
+
+                    <!-- kolom sidebar filter -->
+                    <div class="col col-12 col-lg-auto">
+                        <script type="text/javascript" src="component/sidebar_filter.js"></script>
+                    </div>
+
+                    <!-- kolom daftar produk -->
+                    <div class="col col-12 col-lg">
+                        <h2 class="fw-medium fs-4 mb-3 text-capitalize">rasa sayang</h2>
+                        <div class="row daftar-produk row-cols-2 row-cols-md-3 row-cols-xl-4 g-3 gy-lg-5 mb-5">
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                            <!-- produk item -->
+                            <div class="col produk-item">
+                                <script type="text/javascript" src="component/card_produk.js"></script>
+                            </div>
+
+                        </div>
+
+                        <!-- pagination product -->
+                        <script src="component/pagination.js"></script>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- modal tambah ke keranjang -->
+    <script src="component/modal_tambah_keranjang.js"></script>
+    <script src="component/modal_add_to_cart.js"></script>
+
+    <!-- copyright -->
+    <script type="text/javascript" src="component/copyright.js"></script>
+
+    <!-- footer scripts -->
+    <script type="text/javascript" src="component/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#navProduk').addClass('active');
+        });
+    </script>
+
+</body>
+
+</html>

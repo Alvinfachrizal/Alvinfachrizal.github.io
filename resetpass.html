@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDRACOSTORE &bull; UI Kebijakan Privasi</title>
+    <!-- head links -->
+    <script type="text/javascript" src="component/head_links.js"></script>
+    <style type="text/css">
+        * {
+            /*outline: solid 1px green;*/
+            outline: solid 1px transparent;
+        }
+
+        #show-password1 {
+            float: right;
+            vertical-align: bottom;
+            text-align: center;
+            margin-top: -33px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #show-password2 {
+            float: right;
+            vertical-align: bottom;
+            text-align: center;
+            margin-top: -33px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <script type="text/javascript" src="component/navbar.js"></script>
+
+    <!-- main menu -->
+    <script type="text/javascript" src="component/menu.js"></script>
+
+    <main class="wrapper pt-5">
+        <div class="container">
+            <div class="mx-auto ms-lg-0" style="max-width: 480px;">
+                <h5 class="fw-medium fs-2 mb-5 text-center text-lg-start">Lupa Kata Sandi</h5>
+                <form action="" class="mb-4">
+                    <div class="form-group mb-5">
+                        <div class="border-bottom mb-2">
+                            <label for="" class="form-label mb-0">Email</label>
+                            <input class="form-control rounded-0 bg-transparent border-0 px-0" type="email"
+                                placeholder="Alamat Email">
+                        </div>
+                        <div class="border-bottom mb-2">
+                            <label for="" class="form-label mb-0">Kata Sandi</label>
+                            <input class="form-control rounded-0 bg-transparent border-0 px-0" type="password"
+                                placeholder="Masukan Password Baru" name="password" id="password">
+                            <i id="show-password1" class="bi bi-eye-slash"></i>
+                        </div>
+                        <div class="border-bottom mb-5">
+                            <label for="" class="form-label mb-0">Konfirmasi Kata Sandi</label>
+                            <input class="form-control rounded-0 bg-transparent border-0 px-0" type="password"
+                                placeholder="Masukan Konfirmasi Password Baru" name="passwordconf" id="passwordconf">
+                            <i id="show-password2" class="bi bi-eye-slash"></i>
+                        </div>
+                        <button class="btn btn-md btn-dark w-100 rounded-0 mb-4" id="button-forgot">
+                            <span class="mr-3">Reset Kata Sandi</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    
+
+    <!-- copyright -->
+    <script type="text/javascript" src="component/copyright.js"></script>
+
+    <!-- footer scripts -->
+    <script type="text/javascript" src="component/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#copyright .breadcrumb>li:first-child').addClass('active');
+
+            $('#show-password1').click(function() {
+                if ($(this).hasClass('bi-eye-slash')) {
+                    $('#password').attr('type', 'text');
+                    $(this).removeClass('bi-eye-slash');
+                    $(this).addClass('bi bi-eye');
+                } else {
+                    $('#password').attr('type', 'password');
+                    $(this).removeClass('bi bi-eye');
+                    $(this).addClass('bi-eye-slash');
+                }
+            });
+            $('#show-password2').click(function() {
+                if ($(this).hasClass('bi-eye-slash')) {
+                    $('#passwordconf').attr('type', 'text');
+                    $(this).removeClass('bi-eye-slash');
+                    $(this).addClass('bi bi-eye');
+                } else {
+                    $('#passwordconf').attr('type', 'password');
+                    $(this).removeClass('bi bi-eye');
+                    $(this).addClass('bi-eye-slash');
+                }
+            });
+        });
+    </script>
+   
+</body>
+
+</html>

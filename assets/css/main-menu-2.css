@@ -1,0 +1,93 @@
+#main-menu-2 .nav-link {
+    opacity: .75;
+    position: relative;
+    transition: .36s;
+    cursor: pointer;
+}
+
+#main-menu-2 .nav-link:hover,
+#main-menu-2 .nav-link.active {
+    opacity: 1;
+}
+
+#main-menu-2 .nav-list > .nav-item {
+    position: relative;
+}
+
+#main-menu-2 .nav-list > .nav-item::after {
+    content: '|';
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+}
+
+#main-menu-2 .nav-list > .nav-item:last-child:after {
+    opacity: 0;
+}
+
+#main-menu-2 .nav-list > .nav-item > .nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #323232;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: .36s;
+    animation-name: underoff;
+    animation-duration: .36s;
+}
+
+@keyframes underoff {
+    0% {
+        width: calc(100% - 2rem);
+    }
+    100% {
+        width: 0;
+    }
+}
+
+#main-menu-2 .nav-list > .nav-item > .nav-link.active::after {
+    width: calc(100% - 2rem);
+    animation-name: underon;
+    animation-duration: .36s;
+}
+
+@keyframes underon {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: calc(100% - 2rem);
+    }
+}
+
+#main-menu-2 #collapse-menu .nav-link {
+    padding-left: 0;
+    padding-right: 2.5rem;
+}
+
+#main-menu-2 #collapse-menu .nav-link::after {
+    content: "\f285";
+    font-family: "bootstrap-icons";
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+}
+
+#main-menu-2 #collapse-menu .nav-link.active::after {
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    #tab-content-produk .nav-link::after {
+        opacity: 0 !important;
+    }
+}

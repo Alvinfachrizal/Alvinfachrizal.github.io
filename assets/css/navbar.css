@@ -1,0 +1,92 @@
+/* ---------------------- main menu */
+#mainMenuBar>li {
+	position: relative;
+}
+
+#mainMenuBar>li::before {
+	content: '';
+	width: 1px;
+	height: 56%;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, .25);
+}
+
+#mainMenuBar>li:last-of-type::before {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#mainMenuBar>li>a,
+#mainMenuBar>li>a.active,
+#mainMenuBar>li>a.collapsed.active {
+	color: inherit;
+	opacity: 1;
+	/* font-family: 'HelveticaNeue Medium'; */
+	font-weight: 500;
+	position: relative;
+	cursor: pointer;
+}
+
+#mainMenuBar>li>a.collapsed {
+	opacity: .65;
+	font-family: 'HelveticaNeue';
+	font-weight: 400;
+}
+
+#mainMenuBar>li>a::before,
+#mainMenuBar>li>a.active::before,
+#mainMenuBar>li>a.collapsed.active::before {
+	content: '';
+	width: calc(100% - 2rem);
+	height: 3px;
+	background-color: rgba(0, 0, 0, .875);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+#mainMenuBar>li>a.collapsed::before {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* ---------------------- collapse product > sidemenu product > nav-link */
+#sidemenu-product .nav-link {
+	position: relative;
+	cursor: pointer;
+}
+
+#sidemenu-product .nav-link::before {
+	content: "\f285";
+	font-family: "bootstrap-icons";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-100%, -50%);
+	color: inherit !important;
+	opacity: 0;
+	transition: all .36s;
+}
+
+#sidemenu-product .nav-link {
+	color: inherit;
+	opacity: .5;
+	transition: all .36s;
+}
+
+#sidemenu-product .nav-link.active,
+#sidemenu-product .nav-link.active::before {
+	opacity: 1;
+}
+
+/* ---------------------- swiper slide collapse promo */
+#swiperPromo .swiper-slide {
+	width: 320px;
+}
+
+#swiperPromo .swiper-button {
+	background-color: rgba(255, 255, 255, .25);
+	top: 90px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDRACOSTORE &bull; UI Lupa Sandi Akun</title>
+    <!-- head links -->
+    <script type="text/javascript" src="component/head_links.js"></script>
+    <style type="text/css">
+        * {
+            /*outline: solid 1px green;*/
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <script type="text/javascript" src="component/navbar.js"></script>
+
+    <!-- main menu -->
+    <script type="text/javascript" src="component/menu.js"></script>
+
+    <main class="wrapper pt-5">
+
+        <section>
+            <div class="container">
+                <div class="mx-auto ms-lg-0" style="max-width: 480px;">
+                    <h5 class="fw-medium fs-2 mb-5 text-center text-lg-start">Lupa Kata Sandi</h5>
+                    <form action="" class="mb-4">
+                        <div class="form-group mb-5">
+                            <div class="border-bottom">
+                                <label for="" class="form-label mb-0">Email</label>
+                                <input class="form-control rounded-0 bg-transparent border-0 px-0" type="email"
+                                    placeholder="Alamat Email" id="">
+                            </div>
+                            <div class="form-text">
+                                *Kami akan mengirimkan Anda tautan verifikasi
+                            </div>
+                        </div>
+                        <a class="btn btn-lg btn-dark w-100 rounded-0" data-bs-toggle="modal"
+                            href="#modalForgotPass">Kirim</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- modal kirim email forgot password -->
+    <div class="modal fade" id="modalForgotPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalForgotPassLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <i class="bi bi-check-circle text-success lh-1" style="font-size: 4rem;"></i>
+                        <br>
+                        <span class="fs-2 text-success">Berhasil Terkirim!</span>
+                        <br>
+                        <span>
+                            Kode pemulihan akun Anda telah berhasil terkirim,
+                            <br class="d-none d-md-block">
+                            silahkan cek email untukverifikasi.
+                        </span>
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-lg btn-outline-success rounded-0 w-100"
+                        data-bs-dismiss="modal">
+                        <i class="bi bi-person-circle"></i> Masuk Akun
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <script type="text/javascript" src="component/copyright.js"></script>
+
+    <!-- footer scripts -->
+    <script type="text/javascript" src="component/scripts.js"></script>
+
+</body>
+
+</html>

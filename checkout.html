@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDRACOSTORE &bull; UI Checkout</title>
+    <!-- head links -->
+    <script type="text/javascript" src="component/head_links.js"></script>
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <script type="text/javascript" src="component/navbar.js"></script>
+
+    <!-- main menu -->
+    <script type="text/javascript" src="component/menu.js"></script>
+
+    <!-- breadcrumb -->
+    <script src="component/breadcrumb.js"></script>
+
+    <main class="wrapper pt-4 pt-lg-5">
+
+        <section>
+            <div class="container">
+                <div class="row gy-5 gy-lg-0 gx-lg-5">
+
+                    <div class="col col-12 col-lg-auto">
+                        <div class="formulir-pengiriman">
+                            <h5 class="fs-3 fw-medium mb-4">
+                                Detail Pengiriman
+                            </h5>
+                            <p class="lead lh-sm mb-5">
+                                Beri tahu kami lebih banyak tentang Anda! ATAU
+                                <br>
+                                <a href="signin.html" style="color: #fd4f00;">Masuk dengan akun Anda</a>
+                            </p>
+                            <form action="" class="mb-4">
+                                <div class="form-groub">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Nama Lengkap*</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="Tuliskan Nama Lengkap Anda" type="text" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Surel</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="Alamat Surat Elektronik Anda" type="email" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Nomor Telepon*</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="+62 ..." type="number" id="">
+                                    </div>
+                                </div>
+                                <h5 class="fs-4 my-5">Pilih cara pengiriman</h5>
+                                <div class="form-group">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Daftar Penerima*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option selected>Pilih dari daftar penerima</option>
+                                            <option value="1">Yoggi Dhimas P.</option>
+                                            <option value="2">Evin D. Afsari</option>
+                                            <option value="3">Rasya M. Athaya P.</option>
+                                            <option value="4">Anindita Khairiniswa P.</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Nama Penerima*</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="Tuliskan Nama Penerima" type="text" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Nomor Telepon Penerima*</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="+62 ..." type="number" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Negara*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>Indonesia</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Provinsi*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>Jawa Timur</option>
+                                            <option value="2">Jawa Tengah</option>
+                                            <option value="3">Jawa Barat</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Kota/ Kabupaten*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>Surabaya</option>
+                                            <option value="2">Sidoarjo</option>
+                                            <option value="3">Gresik</option>
+                                            <option value="4">Mojokerto</option>
+                                            <option value="5">Jombang</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Kecamatan*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>Sukolilo</option>
+                                            <option value="2">Benowo</option>
+                                            <option value="3">Wiyung</option>
+                                            <option value="4">Ketintang</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Desa/ Kelurahan*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>Benowo</option>
+                                            <option value="2">Benowo</option>
+                                            <option value="3">Wiyung</option>
+                                            <option value="4">Ketintang</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label mb-0">Kode Pos*</label>
+                                        <select name=""
+                                            class="form-select bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            id="">
+                                            <option value="1" selected>61352</option>
+                                            <option value="2">61353</option>
+                                            <option value="3">61354</option>
+                                            <option value="4">61355</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="" class="form-label mb-0">Alamat*</label>
+                                        <input
+                                            class="form-control bg-transparent rounded-0 border-start-0 border-top-0 border-end-0 px-0"
+                                            placeholder="Tuliskan Alamat Penerima" type="text" id="">
+                                    </div>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-lg btn-outline-dark rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#modalSavePenerimaBaru">
+                                <i class="bi bi-save-fill"></i> Simpan Alamat
+                            </button>
+                        </div>
+                    </div>
+                    <style>
+                        @media (min-width: 992px) {
+                            .wrapper>section:first-of-type>.container>.row>.col .formulir-pengiriman {
+                                width: 520px;
+                            }
+                        }
+
+                        @media (min-width: 1200px) {
+                            .wrapper>section:first-of-type>.container>.row>.col .formulir-pengiriman {
+                                width: 640px;
+                            }
+                        }
+                    </style>
+
+                    <div class="col col-12 col-lg">
+                        <div class="ms-lg-auto" style="max-width: 420px;">
+                            <div class="card border-0 text-reset rounded-0 mb-5">
+                                <div class="card-body bg-light">
+
+                                    <h5 class="fs-4 mb-3">Daftar Pesanan</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 bg-transparent border-secondary">
+                                            <ul class="list-group list-group-flush mb-3">
+
+                                                <li class="list-group-item bg-transparent px-0">
+                                                    <div class="row gx-3">
+                                                        <div class="col col-4">
+                                                            <div class="ratio ratio-1x1 bg-white">
+                                                                <img src="assets/img/product/no_images.svg" width="100%"
+                                                                    height="auto" alt="">
+                                                                <img src="assets/img/product/produk.png" width="100%"
+                                                                    height="auto" class="bg-white" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-8">
+                                                            <h3 class="fs-reset mb-1 opacity-75">
+                                                                <small>kopi</small>
+                                                            </h3>
+                                                            <h4 class="fs-reset mb-0 fw-medium">
+                                                                UCAFÉ Kopi Instan Cappuccino
+                                                            </h4>
+                                                            <div>
+                                                                <span><small>Renceng (10 sachets x 25g)</small></span>
+                                                            </div>
+                                                            <p class="my-1">
+                                                                Qty. 1 pcs
+                                                            </p>
+                                                            <div class="harga-produk" style="flex-grow: 0;">
+                                                                <!-- <div class="harga-normal fw-medium">Rp 14.700,-</div> -->
+                                                                <div class="harga-promo justify-content-start">
+                                                                    <span class="harga-reguler opacity-75"><del>Rp
+                                                                            14.700,-</del></span>
+                                                                    <span class="harga-diskon fw-medium">Rp
+                                                                        13.500,-</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item bg-transparent px-0">
+                                                    <div class="row gx-3">
+                                                        <div class="col col-4">
+                                                            <div class="ratio ratio-1x1 bg-white">
+                                                                <img src="assets/img/product/no_images.svg" width="100%"
+                                                                    height="auto" alt="">
+                                                                <img src="assets/img/product/produk.png" width="100%"
+                                                                    height="auto" class="bg-white" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-8">
+                                                            <h3 class="fs-reset mb-1 opacity-75">
+                                                                <small>kopi</small>
+                                                            </h3>
+                                                            <h4 class="fs-reset mb-0 fw-medium">
+                                                                UCAFÉ Kopi Instan Cappuccino
+                                                            </h4>
+                                                            <div>
+                                                                <span><small>Renceng (10 sachets x 25g)</small></span>
+                                                            </div>
+                                                            <p class="my-1">
+                                                                Qty. 1 pcs
+                                                            </p>
+                                                            <div class="harga-produk" style="flex-grow: 0;">
+                                                                <!-- <div class="harga-normal fw-medium">Rp 14.700,-</div> -->
+                                                                <div class="harga-promo justify-content-start">
+                                                                    <span class="harga-reguler opacity-75"><del>Rp
+                                                                            14.700,-</del></span>
+                                                                    <span class="harga-diskon fw-medium">Rp
+                                                                        13.500,-</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item bg-transparent px-0">
+                                                    <div class="row gx-3">
+                                                        <div class="col col-4">
+                                                            <div class="ratio ratio-1x1 bg-white">
+                                                                <img src="assets/img/product/no_images.svg" width="100%"
+                                                                    height="auto" alt="">
+                                                                <img src="assets/img/product/produk.png" width="100%"
+                                                                    height="auto" class="bg-white" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-8">
+                                                            <h3 class="fs-reset mb-1 opacity-75">
+                                                                <small>kopi</small>
+                                                            </h3>
+                                                            <h4 class="fs-reset mb-0 fw-medium">
+                                                                UCAFÉ Kopi Instan Cappuccino
+                                                            </h4>
+                                                            <div>
+                                                                <span><small>Renceng (10 sachets x 25g)</small></span>
+                                                            </div>
+                                                            <p class="my-1">
+                                                                Qty. 1 pcs
+                                                            </p>
+                                                            <div class="harga-produk" style="flex-grow: 0;">
+                                                                <!-- <div class="harga-normal fw-medium">Rp 14.700,-</div> -->
+                                                                <div class="harga-promo justify-content-start">
+                                                                    <span class="harga-reguler opacity-75"><del>Rp
+                                                                            14.700,-</del></span>
+                                                                    <span class="harga-diskon fw-medium">Rp
+                                                                        13.500,-</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <div class="text-end">
+                                                <a style="color: #fd4f00;" href="cart.html">
+                                                    Edit Keranjang Belanja <i class="bi bi-chevron-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 bg-transparent d-flex flex-nowrap border-0">
+                                            <div class="w-50 fs-5 fw-medium"><span>Subtotal</span></div>
+                                            <div class="w-50 fs-5 fw-medium d-flex justify-content-between">
+                                                <span>Rp</span>
+                                                <span>56.000,-</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 bg-transparent d-flex flex-nowrap border-0">
+                                            <div class="w-50"><span>Diskon</span></div>
+                                            <div class="w-50 d-flex justify-content-between">
+                                                <span>Rp</span>
+                                                <span>0,-</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 bg-transparent border-0">
+                                            <h6 class="fw-medium"><i>*Pilih kurir</i></h6>
+                                            <ul id="daftarKurir" class="list-unstyled ps-2 py-2"
+                                                style="background-color: rgba(0, 0, 0, .0325);">
+                                                <li class="my-2">
+                                                    <div class="form-check align-items-start">
+                                                        <input class="form-check-input rounded-circle mt-2" type="radio"
+                                                            name="kurir" value="kurir1" id="kurirAlt1">
+                                                        <label class="form-check-label btn w-100 text-start rounded-0"
+                                                            for="kurirAlt1">
+                                                            <strong>JNE CTC</strong>
+                                                            <br>
+                                                            <span class="d-flex justify-content-between">
+                                                                <small>Pengiriman 2 - 3 hari (kerja)</small>
+                                                                <span>Rp 8.000,-</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="form-check align-items-start">
+                                                        <input class="form-check-input rounded-circle mt-2" type="radio"
+                                                            name="kurir" value="kurir2" id="kurirAlt2" checked>
+                                                        <label class="form-check-label btn w-100 text-start rounded-0"
+                                                            for="kurirAlt2">
+                                                            <strong>JNE CTR</strong>
+                                                            <br>
+                                                            <span class="d-flex justify-content-between">
+                                                                <small>Pengiriman 1 - 2 hari (kerja)</small>
+                                                                <span>Rp 17.000,-</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="my-2">
+                                                    <div class="form-check align-items-start">
+                                                        <input class="form-check-input rounded-circle mt-2" type="radio"
+                                                            name="kurir" value="kurir3" id="kurirAlt3">
+                                                        <label class="form-check-label btn w-100 text-start rounded-0"
+                                                            for="kurirAlt3">
+                                                            <strong>JNE CTCYES</strong>
+                                                            <br>
+                                                            <span class="d-flex justify-content-between">
+                                                                <small>Pengiriman 1 hari (kerja)</small>
+                                                                <span>Rp 24.000,-</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <style>
+                                                #daftarKurir .form-check-input {
+                                                    background-color: rgba(0, 0, 0, .125);
+                                                    border-color: rgba(0, 0, 0, .125);
+                                                }
+
+                                                #daftarKurir .form-check-input:checked {
+                                                    background-color: #565656;
+                                                    border-color: #565656;
+                                                }
+                                            </style>
+                                        </li>
+                                        <li
+                                            class="list-group-item px-0 bg-transparent border-secondary d-flex flex-nowrap">
+                                            <div class="w-50"><span>Ongkos Kirim</span></div>
+                                            <div class="w-50 d-flex justify-content-between">
+                                                <span>Rp</span>
+                                                <span>17.000,-</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 bg-transparent border-0 d-flex flex-nowrap">
+                                            <div class="w-50 fs-4 fw-medium"><span>Total</span></div>
+                                            <div class="w-50 fs-4 fw-medium d-flex justify-content-between">
+                                                <span>Rp</span>
+                                                <span>49.000,-</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-5">
+                                <h5 class="fs-4 mb-2">Informasi Tambahan</h5>
+                                <textarea name="" id="" class="form-control bg-transparent rounded-0"
+                                    rows="4"></textarea>
+                            </div>
+
+                            <div class="mb-5">
+                                <h5 class="fs-4 mb-3">Metode Pembayaran</h5>
+                                <div class="form-check align-items-start">
+                                    <input class="form-check-input rounded-circle mt-2" type="radio" name="payment"
+                                        value="payment1" id="paymentMethod1" checked>
+                                    <label class="form-check-label btn w-100 text-start rounded-0" for="paymentMethod1">
+                                        Transfer Bank Manual
+                                    </label>
+                                </div>
+                                <div class="form-check align-items-start">
+                                    <input class="form-check-input rounded-circle mt-2" type="radio" name="payment"
+                                        value="payment2" id="paymentMethod2">
+                                    <label class="form-check-label btn w-100 text-start rounded-0" for="paymentMethod2">
+                                        Credit Card / Virtual Account / dsb.
+                                    </label>
+                                </div>
+                                <hr class="opacity-50">
+                                <div class="form-check align-items-start">
+                                    <input class="form-check-input rounded-circle mt-2" type="checkbox" value=""
+                                        id="persetujuan1">
+                                    <label class="form-check-label btn w-100 text-start rounded-0" for="persetujuan1">
+                                        Saya ingin berita, inovasi, dan penawaran terbaru dari Indraco Store
+                                    </label>
+                                </div>
+                                <div class="form-check align-items-start">
+                                    <input class="form-check-input rounded-circle mt-2" type="checkbox" value=""
+                                        id="persetujuan2" checked>
+                                    <label class="form-check-label btn w-100 text-start rounded-0" for="persetujuan2">
+                                        Saya menerima <a href="#" target="_blank" style="color: #fd4f00;">Syarat &
+                                            Ketentuan</a> dan <a href="#" target="_blank"
+                                            style="color: #fd4f00;">Kebijakan Privasi</a> Indraco Store
+                                    </label>
+                                </div>
+                            </div>
+
+                            <a class="btn btn-lg btn-dark w-100 rounded-0" href="index.html">
+                                Proses Pembayaran <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- modal daftar penerima baru tersimpan -->
+    <div class="modal fade" id="modalSavePenerimaBaru" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalSavePenerimaBaruLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title opacity-50" id="modalLabel">
+                        <i class="bi bi-save-fill"></i> Save Penerima Baru
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <i class="bi bi-check-circle text-success lh-1" style="font-size: 4rem;"></i>
+                        <br>
+                        <span class="fs-2 text-success">Berhasil Disimpan!</span>
+                        <br>
+                        <span>
+                            Penerima baru berhasil disimpan
+                            <br>
+                            dalam daftar penerima dengan nama
+                            <br>
+                            <span style="color: #fd4f00;">Yoggi D. Pradhokot</span>.
+                        </span>
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-lg btn-dark rounded-0 w-100" data-bs-dismiss="modal">
+                        Lanjutkan <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <script type="text/javascript" src="component/copyright.js"></script>
+
+    <!-- footer scripts -->
+    <script type="text/javascript" src="component/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.breadcrumb').addClass('mb-0');
+        });
+    </script>
+
+</body>
+
+</html>

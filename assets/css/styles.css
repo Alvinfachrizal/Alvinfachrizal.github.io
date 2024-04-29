@@ -1,0 +1,212 @@
+html,
+body {
+    font-family: 'HelveticaNeue', sans-serif;
+    /* color: #fd4f00; */
+    color: #565656;
+}
+
+button:focus,
+input:focus,
+select:focus,
+a:focus,
+textarea:focus,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.bg-light {
+    background-color: #f2f2f2 !important;
+}
+
+.bg-dark {
+    background-color: #565656 !important;
+}
+
+.bg-secondary {
+    background-color: #a6a6a6 !important;
+}
+
+.fs-reset {
+    font-size: inherit !important;
+}
+
+main.wrapper {
+    padding-top: calc(5rem + 1vw);
+    min-height: 50vh;
+}
+
+main.wrapper>section {
+    margin-bottom: calc(5rem + 1vw);
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+ol.stack-number {
+    counter-reset: item;
+}
+
+ol.stack-number>li {
+    display: flex;
+    column-gap: .5rem;
+}
+
+ol.stack-number>li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
+
+
+/*============================ custom button*/
+.pagination .page-link {
+    color: #565656;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #565656;
+    color: white;
+}
+
+.pagination .disabled {
+    opacity: .25 !important;
+}
+
+
+/*============================ custom button*/
+.btn-dark {
+    border-color: #565656 !important;
+    background-color: #565656 !important;
+    color: #f2f2f2 !important;
+}
+
+
+/*============================ custom placeholder*/
+input,
+.form-check-label {
+    color: inherit !important;
+}
+
+input::placeholder {
+    color: inherit !important;
+    opacity: .5 !important;
+}
+
+
+/*============================ custom breadcrumb*/
+.breadcrumb>li>a {
+    color: inherit;
+    opacity: .5;
+    transition: all .36s;
+}
+
+.breadcrumb>li:hover>a,
+.breadcrumb>li.active>a {
+    opacity: 1;
+}
+
+.breadcrumb>li.active>a {
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+/*============================ custom list vr*/
+ul.list-vr li {
+    position: relative;
+}
+
+ul.list-vr li::before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, .25);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+ul.list-vr li:last-of-type::before {
+    opacity: 0;
+}
+
+
+/*============================ custom checkbox & radios*/
+.form-check {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.form-check-input {
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+    --bs-form-check-bg-image: none !important;
+    ;
+    width: 14px;
+    height: 14px;
+    margin-top: 0;
+}
+
+.form-check-input:checked {
+    background-color: #565656;
+    border-color: #565656;
+}
+
+.form-check-label {
+    padding: 0 .5rem;
+}
+
+
+/*============================ qty product*/
+.qty-product {
+    font-family: 'Gotham Medium';
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.qty-product button {
+    border: solid 1px transparent;
+    background-color: transparent;
+    padding: 0;
+    font-size: inherit !important;
+    color: inherit;
+    opacity: inherit;
+}
+
+.qty-product .btn-minus::before {
+    content: "\f2e6";
+    font-family: "bootstrap-icons";
+}
+
+.qty-product .btn-plus::before {
+    content: "\f4fa";
+    font-family: "bootstrap-icons";
+}
+
+.qty-product input {
+    text-align: center;
+    width: 50px;
+    background-color: transparent;
+    border: solid 1px transparent;
+    padding: 0;
+    font-size: inherit !important;
+    color: inherit;
+    opacity: inherit;
+}
+
+.qty-product input::-webkit-outer-spin-button,
+.qty-product input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,31 @@
+#offcanvasFilter h2,
+#offcanvasFilter h3 {
+    font-size: inherit !important;
+}
+
+/* accordion */
+@media (min-width: 992px) {
+    #accordionFilter {
+        width: 216px;
+        margin-top: -1rem;
+    }
+}
+
+#accordionFilter .accordion-button {
+    color: #565656 !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(to right, #f2f2f2, transparent);
+    box-shadow: unset !important;
+    padding-left: .75rem !important;
+    transition: all .36s !important;
+}
+
+#accordionFilter .accordion-button.collapsed {
+    color: #878787 !important;
+    background-image: linear-gradient(to right, transparent, transparent);
+    padding-left: 0 !important;
+}
+
+#accordionFilter .accordion-button::after {
+    opacity: .5 !important;
+}
